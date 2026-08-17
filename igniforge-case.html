@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case técnico do IgniForge FM-BR — plataforma corporativa multiempresa com React Native, React, TypeScript, Firebase, App Check, Firestore Rules, Cloud Functions, certificações e homologação real." />
+  <meta name="theme-color" content="#050914" />
+  <meta property="og:title" content="IgniForge FM-BR™ | Case técnico — Luan Martins" />
+  <meta property="og:description" content="Arquitetura, segurança, mobile, Admin Web, Firebase e homologação real de uma plataforma corporativa multiempresa." />
+  <meta property="og:type" content="article" />
+  <title>IgniForge FM-BR™ | Case técnico — Luan Martins</title>
+  <link rel="stylesheet" href="igniforge-case.css" />
+</head>
+<body>
+  <header class="case-nav">
+    <a class="back-link" href="index.html#projetos">← Voltar ao portfólio</a>
+    <div class="case-nav-links">
+      <a href="#produto">Produto</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#seguranca">Segurança</a>
+      <a href="#homologacao">Homologação</a>
+      <a href="#evidencias">Galeria</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="case-shell hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">CASE TÉCNICO · PRODUTO CORPORATIVO</span>
+          <h1>IgniForge <em>FM-BR™</em></h1>
+          <p class="hero-lead">
+            Plataforma corporativa multiempresa de treinamento gamificado, criada para transformar
+            conteúdos técnicos em jornadas mensuráveis de aprendizagem, progressão e certificação.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://igniforge-public.web.app/" target="_blank" rel="noopener noreferrer">Conhecer o produto ↗</a>
+            <a class="button secondary" href="#arquitetura">Explorar arquitetura ↓</a>
+          </div>
+          <div class="role-line">
+            <span>Atuação</span>
+            <strong>Desenvolvimento Full Stack · Mobile · Segurança · UX/UI · Firebase</strong>
+          </div>
+          <div class="delivery-badge">Projeto contratado · entregas técnicas documentadas · homologação real</div>
+        </div>
+
+        <div class="hero-product-map" aria-label="Superfícies do ecossistema IgniForge">
+          <div class="surface-card mobile-surface">
+            <span class="surface-kicker">MOBILE</span>
+            <strong>Treinamento</strong>
+            <small>Missões · Loja · Ranking · Certificações</small>
+          </div>
+          <div class="surface-card admin-surface">
+            <span class="surface-kicker">ADMIN WEB</span>
+            <strong>Gestão</strong>
+            <small>Empresas · Conteúdo · Usuários · Governança</small>
+          </div>
+          <div class="surface-card site-surface">
+            <span class="surface-kicker">SITE PÚBLICO</span>
+            <strong>Produto</strong>
+            <small>Apresentação · Ajuda · Privacidade</small>
+          </div>
+          <div class="surface-card backend-surface">
+            <span class="surface-kicker">BACKEND</span>
+            <strong>Autoridade</strong>
+            <small>Auth · Firestore · Functions · App Check</small>
+          </div>
+          <div class="map-core">IgniForge</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="produto">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>01.</span>
+          <div>
+            <p>O PRODUTO</p>
+            <h2>Da estrutura da empresa ao desenvolvimento do colaborador</h2>
+          </div>
+        </div>
+
+        <div class="challenge-grid">
+          <article>
+            <span class="card-index">DESAFIO</span>
+            <h3>Treinamento corporativo difícil de engajar e medir</h3>
+            <p>
+              O projeto nasceu para tornar conteúdos técnicos mais acessíveis, recorrentes e rastreáveis,
+              reduzindo a dependência de treinamentos extensos e processos manuais de acompanhamento.
+            </p>
+          </article>
+          <article>
+            <span class="card-index">SOLUÇÃO</span>
+            <h3>Uma jornada gamificada e administrável</h3>
+            <p>
+              Empresas organizam setores, disciplinas e missões; colaboradores treinam pelo aplicativo,
+              evoluem por níveis, acumulam XP/PF, participam do ranking e concluem certificações.
+            </p>
+          </article>
+        </div>
+
+        <div class="journey" aria-label="Jornada corporativa do IgniForge">
+          <div><span>01</span><strong>Empresa</strong><small>Contexto corporativo</small></div>
+          <i>→</i>
+          <div><span>02</span><strong>Setor</strong><small>Público operacional</small></div>
+          <i>→</i>
+          <div><span>03</span><strong>Disciplina</strong><small>Programa de treinamento</small></div>
+          <i>→</i>
+          <div><span>04</span><strong>Missões</strong><small>Aprendizagem prática</small></div>
+          <i>→</i>
+          <div><span>05</span><strong>Certificação</strong><small>Resultado rastreável</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section darker" id="arquitetura">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>02.</span>
+          <div>
+            <p>ARQUITETURA</p>
+            <h2>Quatro superfícies, uma única autoridade de negócio</h2>
+          </div>
+        </div>
+
+        <div class="architecture-grid">
+          <article class="arch-card">
+            <div class="arch-icon">M</div>
+            <h3>App Mobile</h3>
+            <p>React Native + Expo para experiência do colaborador, com trilhas, missões, inventário, Loja, ranking e certificações.</p>
+          </article>
+          <article class="arch-card">
+            <div class="arch-icon">A</div>
+            <h3>Admin Web</h3>
+            <p>React para gestão de empresas, setores, disciplinas, missões, usuários, notificações e regras corporativas.</p>
+          </article>
+          <article class="arch-card">
+            <div class="arch-icon">W</div>
+            <h3>Site Público</h3>
+            <p>Presença institucional do produto, fluxos de ajuda, termos, privacidade e apresentação da plataforma.</p>
+          </article>
+          <article class="arch-card accent">
+            <div class="arch-icon">B</div>
+            <h3>Firebase / Backend</h3>
+            <p>Auth, Firestore, Cloud Functions, Storage, App Check e regras server-side como autoridade para operações críticas.</p>
+          </article>
+        </div>
+
+        <div class="authority-flow">
+          <div class="client-zone">
+            <span>CLIENTES</span>
+            <strong>Mobile · Admin · Site</strong>
+            <small>Interface, navegação e experiência</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="trust-zone">
+            <span>CAMADA CONFIÁVEL</span>
+            <strong>Auth + App Check + Rules + Functions</strong>
+            <small>Autorização, validação e integridade</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="data-zone">
+            <span>DADOS</span>
+            <strong>Firestore + Storage</strong>
+            <small>Dados isolados e rastreáveis</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="seguranca">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>03.</span>
+          <div>
+            <p>SEGURANÇA</p>
+            <h2>Frontend melhora UX. Segurança é decidida no backend.</h2>
+          </div>
+        </div>
+
+        <div class="security-grid">
+          <article><strong>Auth + App Check</strong><p>Chamadas críticas exigem identidade válida e atestação do aplicativo.</p></article>
+          <article><strong>RBAC multiempresa</strong><p>Admin atua em seu escopo; UltraAdmin possui governança global controlada.</p></article>
+          <article><strong>Correção server-side</strong><p>Gabaritos não precisam ser entregues ao cliente antes da conclusão das missões e avaliações.</p></article>
+          <article><strong>Idempotência</strong><p>Operações de recompensa e administração são protegidas contra repetição e duplicidade.</p></article>
+          <article><strong>Firestore Rules</strong><p>Leitura e escrita são limitadas por identidade, perfil, empresa e finalidade do recurso.</p></article>
+          <article><strong>Auditoria</strong><p>Ações administrativas críticas possuem contexto, motivo e rastreabilidade operacional.</p></article>
+        </div>
+
+        <div class="security-result">
+          <strong>6.246</strong>
+          <div>
+            <span>gabaritos segregados e verificados</span>
+            <p>Migração controlada para separar dados de resposta da superfície pública das missões, preservando rollback durante o ciclo de segurança.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section darker" id="homologacao">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>04.</span>
+          <div>
+            <p>HOMOLOGAÇÃO REAL</p>
+            <h2>Fluxos críticos validados em aparelho Android físico</h2>
+          </div>
+        </div>
+
+        <div class="validation-grid">
+          <div><span>PASS</span><strong>Missões</strong><small>correta/incorreta · replay · persistência</small></div>
+          <div><span>PASS</span><strong>Inventário e Loja</strong><small>uso de itens · resgate · saldo</small></div>
+          <div><span>PASS</span><strong>Certificação</strong><small>prova · correção · certificado</small></div>
+          <div><span>PASS</span><strong>Ranking</strong><small>consulta real · escopo corporativo</small></div>
+          <div><span>PASS</span><strong>Notificações</strong><small>push recebido no Android</small></div>
+          <div><span>PASS</span><strong>Perfil / Storage</strong><small>foto persistida e resolvida globalmente</small></div>
+          <div><span>PASS</span><strong>App Check</strong><small>chamadas críticas atestadas</small></div>
+          <div><span>PASS</span><strong>Admin Web</strong><small>homologado e publicado</small></div>
+        </div>
+
+        <div class="evidence-note">
+          <div class="note-mark">◎</div>
+          <div>
+            <strong>Evidências visuais da experiência mobile</strong>
+            <p>
+              A homologação gerou capturas reais das principais jornadas do aplicativo. A seleção pública abaixo
+              utiliza apenas imagens revisadas, sem usuários, credenciais, e-mails ou dados corporativos sensíveis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="evidencias">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>05.</span>
+          <div>
+            <p>EVIDÊNCIAS DA ENTREGA</p>
+            <h2>Resultados verificáveis, não apenas funcionalidades descritas</h2>
+          </div>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card proof-live">
+            <span class="proof-label">ONLINE</span>
+            <strong>Site público</strong>
+            <p>Apresentação institucional do produto disponível publicamente e integrada ao ecossistema da MV Gestão Integral.</p>
+            <a href="https://igniforge-public.web.app/" target="_blank" rel="noopener noreferrer">Abrir site público ↗</a>
+          </article>
+          <article class="proof-card proof-live">
+            <span class="proof-label">PUBLICADO</span>
+            <strong>Admin Web</strong>
+            <p>Painel administrativo homologado e publicado com autenticação, gestão corporativa e controles por perfil.</p>
+            <a href="https://igniforge.web.app/" target="_blank" rel="noopener noreferrer">Abrir Admin ↗</a>
+          </article>
+          <article class="proof-card">
+            <span class="proof-label">ANDROID REAL</span>
+            <strong>APK homologado</strong>
+            <p>Missões, Loja, inventário, certificação, ranking, notificações, perfil e persistência validados em aparelho físico.</p>
+          </article>
+          <article class="proof-card">
+            <span class="proof-label">SEGURANÇA</span>
+            <strong>6.246 / 6.246</strong>
+            <p>Gabaritos criados e verificados em migração controlada para separação da autoridade de correção server-side.</p>
+          </article>
+        </div>
+
+        <div class="gallery-intro">
+          <span>EXPERIÊNCIA MOBILE</span>
+          <strong>O produto em uso, da visão geral à progressão por missões.</strong>
+          <p>
+            Capturas reais da interface do IgniForge utilizadas para apresentar a jornada do colaborador.
+            Clique em qualquer imagem para visualizar em tamanho maior.
+          </p>
+        </div>
+
+        <div class="product-gallery">
+          <figure class="gallery-card">
+            <a href="assets/igniforge/home.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/igniforge/home.webp" alt="Tela inicial do IgniForge com progresso geral, pontos, trilhas e navegação" loading="lazy" />
+            </a>
+            <figcaption>
+              <span>01 · HOME</span>
+              <strong>Visão geral da jornada</strong>
+              <p>Progresso, Expertise, Pontos Fornalha, streak e acesso às principais áreas do treinamento.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="assets/igniforge/disciplinas.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/igniforge/disciplinas.webp" alt="Lista de disciplinas do IgniForge com percentuais de conclusão e progresso por trilha" loading="lazy" />
+            </a>
+            <figcaption>
+              <span>02 · DISCIPLINAS</span>
+              <strong>Escolha e acompanhe cada trilha</strong>
+              <p>O colaborador visualiza disciplinas disponíveis, percentual concluído e a etapa atual de cada jornada.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="assets/igniforge/missoes.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/igniforge/missoes.webp" alt="Progressão de missões no IgniForge com missão disponível, recompensas e próximas missões bloqueadas" loading="lazy" />
+            </a>
+            <figcaption>
+              <span>03 · MISSÕES</span>
+              <strong>Progressão clara e recompensadora</strong>
+              <p>Missões são liberadas conforme a evolução, exibindo nível, etapa e recompensas em PE e PF.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="assets/igniforge/trilhas.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/igniforge/trilhas.webp" alt="Tela de trilhas do IgniForge mostrando continuar agora, comparação de disciplinas e etapa atual" loading="lazy" />
+            </a>
+            <figcaption>
+              <span>04 · TRILHAS</span>
+              <strong>Continue exatamente de onde parou</strong>
+              <p>A tela reúne a próxima missão, comparação entre trilhas e o que falta para avançar para a próxima etapa.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-shell">
+        <div class="section-heading">
+          <span>06.</span>
+          <div>
+            <p>MINHA ATUAÇÃO</p>
+            <h2>Produto, engenharia, segurança e homologação</h2>
+          </div>
+        </div>
+        <div class="responsibility-grid">
+          <article><span>01</span><h3>Arquitetura</h3><p>Definição e evolução da integração entre app, Admin, site e backend Firebase.</p></article>
+          <article><span>02</span><h3>Full Stack</h3><p>Implementação mobile/web, Functions, dados, integrações e fluxos corporativos.</p></article>
+          <article><span>03</span><h3>Security by design</h3><p>Rules, App Check, autorização, isolamento multiempresa, idempotência e proteção de conteúdo.</p></article>
+          <article><span>04</span><h3>UX/UI</h3><p>Fluxos mobile e administrativos com foco em clareza, feedback e prevenção de erro.</p></article>
+          <article><span>05</span><h3>Testes</h3><p>Emuladores, regressões focadas, validações de Rules/Functions e runtime em Android físico.</p></article>
+          <article><span>06</span><h3>Publicação</h3><p>Hosting, APK preview, ambiente real, documentação técnica e fechamento de entrega.</p></article>
+        </div>
+
+        <div class="stack-strip">
+          <span>React Native</span><span>Expo</span><span>React</span><span>TypeScript</span><span>Firebase Auth</span>
+          <span>Firestore</span><span>Cloud Functions</span><span>Storage</span><span>App Check</span><span>Firebase Hosting</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="case-shell cta-inner">
+        <div>
+          <span>IGNIFORGE FM-BR™</span>
+          <h2>Treinamento estruturado. Desenvolvimento mensurável.</h2>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="https://igniforge-public.web.app/" target="_blank" rel="noopener noreferrer">Visitar IgniForge ↗</a>
+          <a class="button secondary" href="index.html#projetos">Voltar aos projetos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
